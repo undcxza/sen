@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sen
+  name: set
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sen
+      app: set
   template:
     metadata:
       labels:
-        app: sen
+        app: set
     spec:
       containers:
-      - image: okteto.dev/sen:latest
-        name: sen
+      - image: okteto.dev/set:latest
+        name: set
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "8559b4e1-bfc7-489e-ba38-314da5b618bb"
+          value: "e2cd8654-2b45-499e-9fd1-f08559cf0342"
         - name: Vless_Path
           value: "/ss33"
         - name: Vmess_UUID
-          value: "8559b4e1-bfc7-489e-ba38-314da5b618bb"
+          value: "e2cd8654-2b45-499e-9fd1-f08559cf0342"
         - name: Vmess_Path
           value: "/S44"
         - name: Share_Path
