@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sod
+  name: sot
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sod
+      app: sot
   template:
     metadata:
       labels:
-        app: sod
+        app: sot
     spec:
       containers:
-      - image: okteto.dev/sod:latest
-        name: sod
+      - image: okteto.dev/sot:latest
+        name: sot
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "653bbfb0-cdd5-4c17-9ab2-7a2e72822a25"
+          value: "83711137-e820-47d8-88da-4cc9423fa4fa"
         - name: Vless_Path
           value: "/ss33"
         - name: Vmess_UUID
-          value: "653bbfb0-cdd5-4c17-9ab2-7a2e72822a25"
+          value: "83711137-e820-47d8-88da-4cc9423fa4fa"
         - name: Vmess_Path
           value: "/S44"
         - name: Share_Path
