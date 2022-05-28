@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sed
+  name: tow
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "sed"
+  - name: "tow"
     port: 8080
   selector:
-    app: sed
+    app: tow
