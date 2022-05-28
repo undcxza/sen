@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sed
+  name: tow
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sed
+      app: tow
   template:
     metadata:
       labels:
-        app: sed
+        app: tow
     spec:
       containers:
-      - image: okteto.dev/sed:latest
-        name: sed
+      - image: okteto.dev/tow:latest
+        name: tow
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "b60aa692-9289-49f3-89ad-d0bb102e4360"
+          value: "4cc6f715-6e8a-4858-994f-cd1ea04fec75"
         - name: Vless_Path
           value: "/ss33"
         - name: Vmess_UUID
-          value: "b60aa692-9289-49f3-89ad-d0bb102e4360"
+          value: "4cc6f715-6e8a-4858-994f-cd1ea04fec75"
         - name: Vmess_Path
           value: "/S44"
         - name: Share_Path
