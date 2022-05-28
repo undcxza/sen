@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nut
+  name: nvt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nut
+      app: nvt
   template:
     metadata:
       labels:
-        app: nut
+        app: nvt
     spec:
       containers:
-      - image: okteto.dev/nut:latest
-        name: nut
+      - image: okteto.dev/nvt:latest
+        name: nvt
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "23a7499e-8099-4224-b8e5-2a0fa3529266"
+          value: "8731b6fe-48a5-48c2-996d-4379256eaa9b"
         - name: Vless_Path
           value: "/ss33"
         - name: Vmess_UUID
-          value: "23a7499e-8099-4224-b8e5-2a0fa3529266"
+          value: "8731b6fe-48a5-48c2-996d-4379256eaa9b"
         - name: Vmess_Path
           value: "/S44"
         - name: Share_Path
