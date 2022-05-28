@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nvt
+  name: nht
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "nvt"
+  - name: "nht"
     port: 8080
   selector:
-    app: nvt
+    app: nht
