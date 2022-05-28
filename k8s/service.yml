@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nut
+  name: nvt
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "nut"
+  - name: "nvt"
     port: 8080
   selector:
-    app: nut
+    app: nvt
